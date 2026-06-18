@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Collectables</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Aangepaste styling -->
+    <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navigatiebalk -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm sticky-top">
+        <div class="container">
+        <a href="index.html" class="navbar-brand"><b>Portfolio Wendell</b></a>
+        <a href="index.html" class="btn btn-sm btn-light fw-bold text-dark rounded-pill px-3">← Terug naar Home</a>
+        </div>
+    </nav>
+
+    <!-- Hoofdinhoud -->
+    <main class="flex-grow-1 container py-5">
+        <div class="row justify-content-center">
+        <div class="col-lg-9">
+            
+            <!-- Projectkaart -->
+            <div class="p-5 custom-card mb-4 shadow-sm">
+            
+            <!-- 1. Naam van het project -->
+            <h1 class="fw-bold mb-2">Collectables</h1>
+            <p class="text-muted italic">Geavanceerd verzamelplatform met complexe relationele databases</p>
+            <hr class="my-4" style="border-color: #eeeae1;">
+
+            <!-- Projectafbeelding -->
+            <div class="text-center p-3 my-4 bg-light rounded-3 border">
+                <img src="https://as2.ftcdn.net/jpg/05/97/47/95/1000_F_597479556_7bbQ7t4Z8k3xbAloHFHVdZIizWK1PdOo.jpg" class="img-fluid rounded" alt="Screenshot van Collectables Platform" style="max-height: 400px;">
+            </div>
+
+            <!-- 2. Welke talen heb je gebruikt -->
+            <div class="mb-4">
+                <h3 class="h5 fw-bold mb-2">Gebruikte Technologieën & Vaardigheden:</h3>
+                <div class="d-flex gap-2 flex-wrap">
+                <span class="custom-badge">PHP 8</span>
+                <span class="custom-badge">MySQL (Relational DB)</span>
+                <span class="custom-badge">Advanced Form Validation</span>
+                <span class="custom-badge">Data Security (Bcrypt/PDO)</span>
+                <span class="custom-badge">Scrum Sprints</span>
+                </div>
+            </div>
+
+            <!-- 3. Beschrijving van het project -->
+            <div class="mb-5">
+                <h3 class="h5 fw-bold mb-3">Projectomschrijving:</h3>
+                <p class="text-secondary text-justify mb-3">
+                <strong>Collectables</strong> is een uitgebreid online platform waar gebruikers hun persoonlijke verzamelingen, variërend van retro games tot vinyl platen, kunnen aanmaken, beheren en delen. Dit project is ontwikkeld in sprints volgens de Scrum-methode en richt zich sterk op complexe relationele database-interacties en geavanceerd backend-beheer.
+                </p>
+                
+                <h4 class="h6 fw-bold mb-2 text-dark">Database Architectuur & Veiligheid:</h4>
+                <p class="text-secondary text-justify mb-3">
+                De kern van de applicatie bestaat uit een MySQL-database met drie gerelateerde tabellen: users, collections en items. Met behulp van PHP en PDO (Prepared Statements) worden alle CRUD-operaties (Create, Read, Update, Delete) veilig uitgevoerd om SQL-injecties te voorkomen. Daarnaast is er een robuust authenticatiesysteem gebouwd dat wachtwoorden veilig hasht met <code>password_hash()</code> en verifieert via <code>password_verify()</code>. Sessiebeheer garandeert dat gebruikers uitsluitend hun eigen verzamelingen kunnen bewerken of verwijderen, terwijl <code>htmlspecialchars()</code> structureel wordt toegepast om XSS-aanvallen tegen te gaan.
+                </p>
+
+                <h4 class="h6 fw-bold mb-2 text-dark">Geavanceerde Form Validatie:</h4>
+                <p class="text-secondary text-justify">
+                Een belangrijk onderdeel van de backend-logica is de uitgebreide form validatie. Deze server-side validatie controleert nauwkeurig gebruikersinvoer (zoals verplichte velden en maximale karakterlengtes), toont duidelijke foutmeldingen bij onjuistheden en behoudt slim eerder ingevulde gegevens via de <code>$_POST</code> array, wat de gebruikerservaring aanzienlijk verbetert bij het corrigeren van invoerfouten.
+                </p>
+            </div>
+
+            <!-- 4. Link naar het project -->
+            <div class="border-top pt-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div>
+                <p class="small text-muted mb-0">Bekijk de werking van de live applicatie:</p>
+                </div>
+                <!-- Link naar de live versie -->
+                <a href="https://github.com/ROCMondriaanTIN/sd25-project-p04-collectables-kat.git" target="_blank" class="btn btn-custom px-4 py-2">Bekijk Live op GitHub Pages →</a>
+            </div>
+
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 custom-footer small mt-auto">
+        <div class="container">
+        <p class="mb-0">&copy; 2026 Wendell Long. Alle rechten voorbehouden. ROC Mondriaan.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
