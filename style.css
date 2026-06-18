@@ -1,72 +1,54 @@
-/* ==========================================
-   VISUELE STYLING - MAHOGANY & WARM WOOD
-   ========================================== */
-
-/* Algemene instellingen */
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #fbf9f6 !important; /* Schone, heldere melkwitte basis */
-  color: #4e4640;                       /* Donkere moutkleur voor tekst */
+  background-color: #fbf9f6 !important; 
+  color: #4e4640;                       
 }
 
-/* Navigatiebalk en footer - Nu in diep warm houtskool */
-.custom-navbar {
-  background-color: #9a443a !important; 
-  border-bottom: 2px solid #bfa37a !important; /* 暖燕麦原木色，精致且带有呼吸感 */
-}
 
-.custom-footer {
-  background-color: #3d3530 !important;
-  color: #fbf9f6 !important;
-  border-top: 1px solid #2e2824;
-}
 
-/* Kaartcomponenten en containers */
 .custom-card {
   background-color: #ffffff !important;
-  border: 1px solid #eeeae1 !important;       /* Subtiele, lichte rand */
-  border-radius: 16px !important;              /* Zachte, afgeronde hoeken */
-  box-shadow: 0 10px 30px -5px rgba(165, 155, 145, 0.06) !important; /* Lichte schaduw */
+  border: 1px solid #eeeae1 !important;   
+  border-radius: 16px !important;     
+  box-shadow: 0 10px 30px -5px rgba(165, 155, 145, 0.06) !important;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-/* Hover-effect voor kaarten - Licht nu warm op in sfeervol cederhout */
 .custom-card:hover {
   transform: translateY(-4px);
-  border-color: #c69c72 !important; /* Warme ceder/oranje-bruine houttoon bij hover */
+  border-color: #c69c72 !important;
   box-shadow: 0 15px 35px -5px rgba(198, 156, 114, 0.15) !important;
 }
 
-/* Sectie-achtergronden (Visuele hiërarchie) */
 .custom-section-bg {
-  background-color: #f3efe6 !important; /* Rustgevend zacht linnen/almond */
+  background-color: #f3efe6 !important; 
   border-top: 1px solid #eeeae1;
   border-bottom: 1px solid #eeeae1;
 }
 
 .custom-contact-bg {
-  background-color: #e5ded4 !important; /* Warme, milde modetint */
+  background-color: #e5ded4 !important;
   border-top: 1px solid #dcd3c7;
 }
 
-/* Knoppen en badges - Nu geaccentueerd met rijk mahoniehout */
+
 .btn-custom {
-  background-color: #9a443a !important; /* Krachtig en warm mahoniebrons/roodkoper */
+  background-color: #9a443a !important; 
   color: #ffffff !important;
   font-weight: 600;
   border: none !important;
   border-radius: 10px !important;
-  box-shadow: 0 4px 12px rgba(154, 68, 58, 0.2) !important; /* Warme gloed */
+  box-shadow: 0 4px 12px rgba(154, 68, 58, 0.2) !important;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-/* Hover-effect voor knop (Levendig warm ceder) */
+
 .btn-custom:hover {
-  background-color: #b35347 !important; /* Iets vuriger en lichter houtrood bij hover */
+  background-color: #b35347 !important;
   transform: translateY(-1px);
 }
 
@@ -81,15 +63,14 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Interactie tussen kaart en badges - Badge licht warm op */
 .custom-card:hover .custom-badge {
   background-color: #f5ece2 !important;
-  color: #9a443a !important; /* Badge tekst kleurt mee met het mahoniehoutelement */
+  color: #9a443a !important;
 }
 
-/* Sitemap weergave */
+
 .sitemap-box {
-  background-color: #2e2624 !important; /* Extreem donker warmbruine code-omgeving */
+  background-color: #2e2624 !important;
   color: #f1ede4 !important;
   border: none !important;
   font-family: 'Courier New', Courier, monospace;
