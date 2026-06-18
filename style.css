@@ -8,7 +8,10 @@ body {
   color: #4e4640;                       
 }
 
-
+.custom-navbar {
+  background-color: #9a443a !important; 
+  border-bottom: 2px solid #bfa37a !important;
+}
 
 .custom-card {
   background-color: #ffffff !important;
@@ -70,7 +73,7 @@ body {
 
 
 .sitemap-box {
-  background-color: #2e2624 !important;
+  background-color: #2e2624 !important; /* Extreem donker warmbruine code-omgeving */
   color: #f1ede4 !important;
   border: none !important;
   font-family: 'Courier New', Courier, monospace;

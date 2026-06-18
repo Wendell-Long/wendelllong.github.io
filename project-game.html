@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details - Build your game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><b>Portfolio Wendell</b></a>
+      <a href="index.html" class="btn btn-sm btn-light fw-bold text-dark rounded-pill px-3">← Terug naar Home</a>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1 container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        
+        <div class="p-5 custom-card mb-4 shadow-sm">
+          <h1 class="fw-bold mb-2">Build your game - Whack-a-Mole</h1>
+          <p class="text-muted italic">Individueel project beheerd via de Scrum-methodiek</p>
+          <hr class="my-4" style="border-color: #eeeae1;">
+
+          <div class="text-center p-3 my-4 bg-light rounded-3 border">
+            <img src="https://as2.ftcdn.net/jpg/05/97/47/95/1000_F_597479556_7bbQ7t4Z8k3xbAloHFHVdZIizWK1PdOo.jpg" class="img-fluid rounded" alt="Screenshot van Whack-a-Mole Game" style="max-height: 400px;">
+          </div>
+
+          <div class="mb-4">
+            <h3 class="h5 fw-bold mb-2">Gebruikte Technologieën & Methodieken:</h3>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="custom-badge">HTML5</span>
+              <span class="custom-badge">CSS3</span>
+              <span class="custom-badge">JavaScript (ES6)</span>
+              <span class="custom-badge">Scrum Process</span>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="h5 fw-bold mb-3">Projectomschrijving:</h3>
+            <p class="text-secondary text-justify mb-3">
+              Voor het project "Build your game" heb ik individueel een interactieve 2D <strong>Whack-a-Mole)</strong> game ontwikkeld. Hoewel dit een individuele opdracht was, heb ik de <strong>Scrum-methodiek</strong> toegepast om mijn eigen ontwikkelproces te structureren. Door middel van een persoonlijke backlog heb ik features zoals de scoretelling, de aftellende timer en de moeilijkheidsgraad stapsgewijs gerealiseerd binnen de gestelde sprints.
+            </p>
+            
+            <h4 class="h6 fw-bold mb-2 text-dark">Complexe JavaScript Logica:</h4>
+            <p class="text-secondary text-justify">
+              Dit project bevat complexe front-end logica aangedreven door <strong>JavaScript (ES6)</strong>. De kern van de game draait om een algoritme dat via <code>Math.random()</code> willekeurig gaten selecteert waar de mollen voor een beperkte tijd verschijnen. Om raceconditions en overlappende timers te voorkomen, is er strikt gebruikgemaakt van gecoördineerde <code>setInterval</code> en <code>setTimeout</code> functies. 
+            </p>
+            <p class="text-secondary text-justify mt-2">
+              Daarnaast is er een score-validatiesysteem gebouwd: via event listeners wordt gecontroleerd of de gebruiker daadwerkelijk binnen de actieve tijd op de mol klikt. Bij een succesvolle 'hit' wordt de score realtime in de DOM bijgewerkt, terwijl een centrale gameloop de resterende tijd bewaakt en het spel netjes beëindigt wanneer de timer de nul bereikt.
+            </p>
+          </div>
+
+          <div class="border-top pt-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div>
+              <p class="small text-muted mb-0">Test de live game direct in de browser:</p>
+            </div>
+            <a href="" target="_blank" class="btn btn-custom px-4 py-2">Speel Live op GitHub Pages →</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-3 custom-footer small mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Wendell Long. Alle rechten voorbehouden. ROC Mondriaan.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
