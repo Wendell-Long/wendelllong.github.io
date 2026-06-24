@@ -5,21 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Wendell Long</title>
 
+  <!-- Bootstrap 5.3.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <!-- Aangepaste styling -->
   <link href="style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light d-flex flex-column min-vh-100">
 
-  <!-- 1. NAVBAR -->
+  <!-- =========================================================================
+       1. NAVIGATIEBALK (STREVEN NAAR EEN STICKY EN RESPONSIVE MENU)
+       ========================================================================= -->
   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm sticky-top">
     <div class="container">
       <a href="index.html" class="navbar-brand"><b>Portfolio Wendell</b></a>
       
+      <!-- Mobiele toggler knop -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
+      <!-- Navigatie links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -41,48 +46,54 @@
 
   <main class="flex-grow-1">
     
-    <!-- 2. OVER MIJ SECTION -->
+    <!-- =========================================================================
+         2. OVER MIJ SECTION (INTRODUCTIE EN PROFIELFOTO)
+         ========================================================================= -->
     <section id="over-mij" class="container py-5 my-3">
       <div class="row align-items-center">
+        <!-- Persoonlijke tekst -->
         <div class="col-md-6">
           <h1 class="fw-bold mb-3">Over Mij</h1>
           <div class="p-4 custom-card">
             <p>
-              Ik ben <b>Wendell Long</b>, een student Software Developer aan het ROC Mondriaan. 
-              Ik ben momenteel bezig met het leren van HTML, CSS, JavaScript en PHP om functionele websites te bouwen.
+              Ik ben <b>Wendell Long</b>, student Software Developer aan het ROC Mondriaan (Niveau 4). 
+              Tijdens mijn opleiding focus ik me op het bouwen van functionele applicaties met HTML, CSS, JavaScript en PHP.
             </p>
-            <p class="text-muted mb-0">
-              Als gedreven aankomend software developer focus ik op het schrijven van schone, herbruikbare code en het ontwerpen van intuïtieve gebruikersinterfaces. Mijn ambitie is om innovatieve webapplicaties te ontwikkelen die complexe problemen oplossen.
+            <p class="text-secondary mb-0 small">
+              Ik houd ervan om code netjes och gestructureerd op te zetten, zodat projecten overzichtelijk blijven en makkelijk uit te breiden zijn. Mijn doel is om solide back-end logica te combineren met interfaces die prettig werken voor de gebruiker.
             </p>
           </div>
         </div>
 
+        <!-- Profilefoto -->
         <div class="col-md-6 text-center mt-4 mt-md-0">
           <div class="p-2 custom-card d-inline-block">
-            <img src="https://as2.ftcdn.net/jpg/05/97/47/95/1000_F_597479556_7bbQ7t4Z8k3xbAloHFHVdZIizWK1PdOo.jpg" class="img-fluid rounded-3" alt="Profielfoto Wendell" style="max-height: 300px;">
+            <img src="image/avatar.png" class="img-fluid rounded-3" alt="Profielfoto Wendell" style="max-height: 300px; width: 300px; object-fit: cover;">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. PROJECTEN SECTION -->
+   <!-- Project Sections -->
     <section id="projecten" class="container-fluid custom-section-bg py-5">
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col-12">
             <h2 class="fw-bold">Mijn Projecten</h2>
-            <p class="text-muted">Klik op een project voor de volledige en uitgebreide beschrijving.</p>
+            <p class="text-muted">Een overzicht van het werk dat ik tijdens mijn schoolperiodes heb ontwikkeld.</p>
           </div>
         </div>
 
+        <!-- Start van de responsive projectkaarten grid -->
         <div class="row g-4"> 
+          
           <!-- Project 1: Quiz -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="p-3 custom-card h-100 d-flex flex-column justify-content-between">
               <div>
-                <img src="https://cdn.corenexis.com/f/iyX4XA4X71B.png" class="img-fluid rounded mb-2" alt="Screenshot Quiz Project">
+                <img src="image/quiz.png" class="img-fluid rounded mb-2" alt="Screenshot Quiz Project">
                 <h3 class="fw-bold h5 mt-2">Quiz Game</h3>
-                <p class="text-secondary small">Een interactieve quiz applicatie om kennis te testen.</p>
+                <p class="text-secondary small">Een dynamische front-end quiz om kennis te testen, gebouwd in Scrum-verband.</p>
               </div>
               <div class="mt-3">
                 <div class="mb-2 d-flex gap-1 flex-wrap">
@@ -99,9 +110,9 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="p-3 custom-card h-100 d-flex flex-column justify-content-between">
               <div>
-                <img src="https://simple.game/assets/thumbs/034413/whack-a-mole.jpeg" class="img-fluid rounded mb-2" alt="Screenshot Build your game Project">
+                <img src="image/whackamole.png" class="img-fluid rounded mb-2" alt="Screenshot Build your game Project">
                 <h3 class="fw-bold h5 mt-2">Build your game</h3>
-                <p class="text-secondary small">Aangepaste 2D browsergame met complexe game-logica.</p>
+                <p class="text-secondary small">Een interactieve 2D browsergame met logica voor scores en timers.</p>
               </div>
               <div class="mt-3">
                 <div class="mb-2 d-flex gap-1 flex-wrap">
@@ -117,9 +128,9 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="p-3 custom-card h-100 d-flex flex-column justify-content-between">
               <div>
-                <img src="https://cdn.corenexis.com/f/oG05kkD6v1X.png" class="img-fluid rounded mb-2" alt="Screenshot Mon-in Project">
+                <img src="image/monin.png" class="img-fluid rounded mb-2" alt="Screenshot Mon-in Project">
                 <h3 class="fw-bold h5 mt-2">Mon-in</h3>
-                <p class="text-secondary small">Een administratiesysteem met databasekoppeling.</p>
+                <p class="text-secondary small">Een functioneel administratiesysteem met databasekoppeling voor urenregistratie.</p>
               </div>
               <div class="mt-3">
                 <div class="mb-2 d-flex gap-1 flex-wrap">
@@ -136,9 +147,9 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="p-3 custom-card h-100 d-flex flex-column justify-content-between">
               <div>
-                <img src="https://cdn.corenexis.com/f/dWMSJpxBLvg.png" class="img-fluid rounded mb-2" alt="Screenshot Collectables Project">
+                <img src="image/collectable.png" class="img-fluid rounded mb-2" alt="Screenshot Collectables Project">
                 <h3 class="fw-bold h5 mt-2">Collectables</h3>
-                <p class="text-secondary small">Webapplicatie voor het beheren van persoonlijke verzamelingen.</p>
+                <p class="text-secondary small">Een platform waar gebruikers inloggen en hun eigen verzamelingen beheren via CRUD.</p>
               </div>
               <div class="mt-3">
                 <div class="mb-2 d-flex gap-1 flex-wrap">
@@ -154,24 +165,25 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="p-3 custom-card h-100 d-flex flex-column justify-content-between">
               <div>
-                <img src="https://studybullet.com/wp-content/uploads/2023/03/Golang101-Learn-Golang-Basics.jpg" class="img-fluid rounded mb-2" alt="Screenshot Keuzedeel Project">
-                <h3 class="fw-bold h5 mt-2">GOlang</h3>
-                <p class="text-secondary small">Gespecialiseerd project gericht op verbreding van vaardigheden.</p>
+                <img src="image/golang.png" class="img-fluid rounded mb-2" alt="Screenshot Keuzedeel Project">
+                <h3 class="fw-bold h5 mt-2">Go (Golang)</h3>
+                <p class="text-secondary small">Een verdiepend backend-project gericht op een moderne, gecompileerde taal.</p>
               </div>
               <div class="mt-3">
                 <div class="mb-2 d-flex gap-1 flex-wrap">
-                  <span class="custom-badge">GOlang</span>
-                  <span class="custom-badge">Terminal</span>
+                  <span class="custom-badge">Go (Golang)</span>
+                  <span class="custom-badge">Backend</span>
                 </div>
-                <a href="project-golang.html" class="btn btn-sm btn-custom w-100">Bekijk Project & Details</a>
+                <a href="project-keuzedeel.html" class="btn btn-sm btn-custom w-100">Bekijk Project & Details</a>
               </div>
             </div>
           </div>
+
         </div> 
       </div>
     </section>
 
-<!-- 4. PAGINA OVER DE WEBSITE -->
+   
     <section id="over-website" class="container py-5">
       <div class="row mb-4">
         <div class="col-12 text-center">
@@ -181,33 +193,34 @@
       </div>
 
       <div class="row g-4">
+        <!-- Omschrijving en kleurcodes -->
         <div class="col-md-6">
           <div class="p-4 custom-card h-100">
             <h3 class="h5 fw-bold mb-3">1. Omschrijving & Concept</h3>
             <p class="small text-secondary text-justify">
-              Deze website is ontwikkeld als digitaal portfolio voor mijn opleiding Software Developer aan het ROC Mondriaan. Het doel is om een strak en professioneel overzicht te bieden van mijn projecten en technische vaardigheden. De site maakt gebruik van een schone multi-page structuur om de laadtijd te optimaliseren, de code overzichtelijk te houden en te voldoen aan de gestelde webrichtlijnen.
+              Dit portfolio is gebouwd om een overzichtelijk beeld te geven van mijn vaardigheden en projecten voor de opleiding aan het ROC Mondriaan. Er is bewust gekozen voor een overzichtelijke multi-page structuur met Bootstrap 5, zodat de site snel laadt, mobielvriendelijk is och voldoet aan de formele codeconventies.
             </p>
             
-            <h3 class="h5 fw-bold mt-4 mb-3">2. Kleurenschema</h3>
+            <h3 class="h5 mt-4 mb-3">2. Kleurenschema</h3>
             <p class="small text-secondary">
-              Er is gekozen voor een warm, sfeervol en contrasterend kleurenpalet gebaseerd op natuurlijke hout- en linnen-tinten die rust uitstralen:
+              Het palet is gebaseerd op rustige hout- en linnen-tinten die zorgen voor een professionele en samenhangende uitstraling:
             </p>
             <ul class="small text-secondary ps-3">
-              <li><b>Melkwit (#fbf9f6):</b> De heldere, schone basisachtergrond die zorgt voor een moderne, frisse uitstraling en goed leesbaarheid.</li>
-              <li><b>Rode hout (#9a443a):</b> Toegepast op de navigatiebalk e buttons om een visuele antrekking en warme gevoel.</li>
-              <li><b>Cederhout / Haver (#bfa37a & #c69c72):</b> Gebruikt voor subtiele randen en dynamische hover-effecten om de interactie levendig te maken.</li>
+              <li><b>Melkwit (#fbf9f6):</b> Een zachtere tint dan puur wit die minder fel is voor de ogen; in combinatie met de andere kleuren voorkomt het de eentonigheid van het zwart-wit minimalisme.</li>              <li><b>Rood hout (#9a443a):</b> Toegepast op de navigatiebalk en primaire knoppen om duidelijke visuele accenten te leggen.</li>
+              <li><b>Cederhout / Haver (#bfa37a & #c69c72):</b> Gebruikt voor subtiele borders en vloeiende hover-effecten tijdens interactie.</li>
             </ul>
           </div>
         </div>
 
+        <!-- Over deze website -->
         <div class="col-md-6">
           <div class="p-4 custom-card h-100">
             <h3 class="h5 fw-bold mb-3">3. Inspiratie</h3>
             <p class="small text-secondary text-justify">
-              De lay-out is geïnspireerd op minimalistische portfolio's en moderne houtwerk-ambachtswebsites. Door projecten in duidelijke kaarten te verpakken met royale afgeronde hoeken (16px) en vloeiende transitie-effecten, blijft de interface uiterst scannabaar en gebruiksvriendelijk voor potentiële stagebedrijven of examinatoren.
+              De lay-out is geïnspireerd op minimalistische ontwerpen en traditionele ambachtswebsites. Door de projecten te groeperen in strakke kaarten met een duidelijke padding, afgeronde hoeken (16px) en subtiele transities, blijft de website eenvoudig te scannen voor beoordelaars en stagebedrijven.
             </p>
             
-            <h3 class="h5 fw-bold mt-4 mb-3">4. Sitemap</h3>
+            <h3 class="h5 mt-4 mb-3">4. Sitemap</h3>
             <div class="p-3 rounded sitemap-box shadow-sm" style="font-size: 0.8rem; line-height: 1.4;">
               index.html (Homepage)<br>
               ├── #over-mij (Introductie)<br>
@@ -225,25 +238,26 @@
       </div>
     </section>
 
-    <!-- 5. CONTACT SECTION -->
+    
     <section id="contact" class="container-fluid custom-contact-bg py-5">
       <div class="container">
         <div class="row mb-4">
           <div class="col-12 text-center">
             <h2 class="fw-bold">Contactinformatie</h2>
-            <p class="text-muted">Heb je een vraag of wil je samenwerken? Neem gerust contact op.</p>
+            <p class="text-muted">Vragen of interesse in een samenwerking? Neem gerust contact op.</p>
           </div>
         </div>
 
         <div class="row g-4 justify-content-center">
+          
           <div class="col-md-5">
             <h3 class="h5 fw-bold">Mijn Gegevens</h3>
             <p class="mb-1"><b>Naam:</b> Wendell Long</p>
-            <p class="mb-1"><b>Opleiding:</b> Software Developer (MBO4) - ROC Mondriaan</p>
+            <p class="mb-1"><b>Opleiding:</b> Software Developer (MBO 4) - ROC Mondriaan</p>
             <p class="mb-3"><b>Locatie:</b> Den Haag, Nederland</p>
-            <p class="small text-muted"></p>
           </div>
           
+          <!-- Contactformulier interface -->
           <div class="col-md-5">
             <h3 class="h5 fw-bold">Stuur een Bericht</h3>
             <form onsubmit="return false;">
@@ -264,14 +278,13 @@
     </section>
   </main>
 
-  <!-- 6. FOOTER -->
+
   <footer class="text-center py-3 custom-footer small mt-auto">
     <div class="container">
       <p class="mb-0">&copy; 2026 Wendell Long</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
